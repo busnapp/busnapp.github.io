@@ -13,12 +13,12 @@ background-color: #eef
 font-family: Ubuntu,sans-serif;
 color:#00f;
 background-color:inherit;
-width:100%;
+width:90%;
 }
 
 #map-canvas {
-width: 100%;
-height: 100%;
+width: 10%;
+height: 10%;
 margin: 0px;
 padding: 0px
       }

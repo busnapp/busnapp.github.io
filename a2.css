@@ -1,13 +1,13 @@
 #head{
 font-family: Ubuntu,sans-serif;
 color:#f66;
-background-color: #eee;
+background-color:inherit;
 
 align-content: center;    
 }
 
 #body{
-background-color: #eef
+background-color: #fff
 }
 #Intro{
 font-family: Ubuntu,sans-serif;

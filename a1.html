@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html ng-app>
+     <script src="angular.js"></script>
+    <script src="a3.js"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+<link rel="stylesheet" type="text/css" href="a2.css">
+   
+    <title ng-controller="hd">
+        {{hdn}}
+    </title>
+    </head>
+    <body id="body" ng-controller="hd">
+<h1 id="head" >
+   <div>{{hdn}}</div>
+    </h1>
+<p id="Intro"> {{hdn}} is a new app for Sri Lankans to travel by Bus. Its now easier to travel. Check the buses you need to go from point A to point B or find out which bus takes you where</p>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+ google.maps.event.addDomListener(window, 'load', initialize);
+ </script> 
+<div id="map-canvas"> 
+	</div>
+        
+        
+        
+        
+        
+        
+        
+</body>
+
+</html>

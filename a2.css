@@ -1,0 +1,24 @@
+#head{
+font-family: Ubuntu,sans-serif;
+color:#f66;
+background-color: #eee;
+
+align-content: center;    
+}
+
+#body{
+background-color: #eef
+}
+#Intro{
+font-family: Ubuntu,sans-serif;
+color:#00f;
+background-color:inherit;
+width:500px;
+}
+
+#map-canvas {
+width: 500px;
+height: 500px;
+margin: 0px;
+padding: 0px
+      }

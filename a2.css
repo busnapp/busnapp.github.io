@@ -22,3 +22,15 @@ height: 100%;
 margin: 0px;
 padding: 0px
       }
+
+#To{
+width:50%;
+    height:10%;
+    font-size: 200%
+}
+
+#From{
+width:50%;
+    height:10%;
+    font-size: 200%
+}

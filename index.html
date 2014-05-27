@@ -6,15 +6,29 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 <link rel="stylesheet" type="text/css" href="a2.css">
    
-    <title ng-controller="hd">
+        <title ng-controller="hd">
         {{hdn}}
     </title>
     </head>
-    <body id="body" ng-controller="hd">
+    <body id="body">
 <h1 id="head" >
-   <div>{{hdn}} for Sri Lanka</div>
+   <div  ng-controller="hd">{{hdn}}</div>
     </h1>
-<p id="Intro"> {{hdn}} is currently in Alpha Stage....</p>
+<p id="Intro"  ng-controller="hd"> {{hdn}} is in alpha</p>
+        
+      
+<select id="To" onchange="txbx()" ng-controller="drpmnu">
+    <option id= "{{place}}" ng-repeat="place in places" > To {{place}}</option>
+        </select>  
+        
+<select id="From"  ng-controller="drpmnu">
+    <option ng-repeat="place2 in places" > From {{place2}}</option>
+        </select>
+        
+        <div ng-controller="testid">{{placed}}</div>  
+        
+        
+<input type="text" name="tbox" id="tbox"/>    
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
  google.maps.event.addDomListener(window, 'load', initialize);

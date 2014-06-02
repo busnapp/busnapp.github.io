@@ -16,22 +16,36 @@ function initialize() {
       mapOptions);
       if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
+        
+//we created an anony function to set map    
+        
+/*a position is returned if successful which goes into this anonymous function and so we say that this is = pos in terms of lattitude and longitude... hence the google.map.latlng */        
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
 
-      var infowindow = new google.maps.InfoWindow({
+        
+        //this will create the icon folks
+        var imgdude={
+     url: "licn.png", 
+     scaledSize: new google.maps.Size(100,100 ), // size
+    
+ };
+        //this will put it on the map man
+      var mrkme = new google.maps.Marker({
         map: map,
         position: pos,
-        content: 'You are here!'
+        icon: imgdude
       });
-
+    
+        
       map.setCenter(pos);
+        
     }, function() {
       handleNoGeolocation(true);
     });
   } else {
     // Browser doesn't support Geolocation
-    
+    handleNoGeolocation(false);
   }
    
     

@@ -15,7 +15,7 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
       if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
+    navigator.geolocation.watchPosition(function(position) {
         
 //we created an anony function to set map    
         
@@ -27,7 +27,7 @@ function initialize() {
         //this will create the icon folks
         var imgdude={
      url: "licn.png", 
-     scaledSize: new google.maps.Size(100,100 ), // size
+     scaledSize: new google.maps.Size(80,80), // size
     
  };
         //this will put it on the map man
